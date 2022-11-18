@@ -1,36 +1,28 @@
-import time
-import sys
-import pygame
+import pygame, sys
 from settings import *
- 
+
 class Game:
-    def __init__(self):
-        
-        # setup
-        pygame.init()
-        self.display_surface = pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))
-        pygame.display.set_caption('Flappy Bird')
-        self.clock = pygame.time.Clock()
- 
+    def __init__(self)
+    pygame.init()
+    self.screen = pygame.display.set_mode((WIDTH,HEIGTH))
+    self.clock = pygame.time.Clock()
+
     def run(self):
-        last_time = time.time()
         while True:
-            
-            # delta time
-            dt = time.time() - last_time
-            last_time = time.time()
- 
-            # event loop
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-            
-            # game logic
-            
+
+            self.screen.fill('black')
             pygame.display.update()
-            self.clock.tick(FRAMERATE)
- 
+            self.clock.tick(FPS)
+
 if __name__ == '__main__':
-    game = Game()
-    game.run()
+    
+
+
+        
+
+
+
