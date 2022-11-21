@@ -1,11 +1,15 @@
-import pygame, sys
+import pygame
+import sys
 from settings import *
 
+
 class Game:
-    def __init__(self)
-    pygame.init()
-    self.screen = pygame.display.set_mode((WIDTH,HEIGTH))
-    self.clock = pygame.time.Clock()
+    def __init__(self):
+
+         pygame.init()
+         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+         self.clock = pygame.time.Clock()
+    pygame.display.set_caption('Breakout')
 
     def run(self):
         while True:
@@ -18,11 +22,7 @@ class Game:
             pygame.display.update()
             self.clock.tick(FPS)
 
+
 if __name__ == '__main__':
-    
-
-
-        
-
-
-
+    game = Game()
+    game.run()
