@@ -6,6 +6,9 @@ class Game:
 
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH,HEIGTH))
+        
+        #This is where we need to add the name once we come up with it
+        pygame.display.set_caption('GAME NAME HERE')
         self.clock = pygame.time.Clock()
 
     def run(self):
