@@ -8,10 +8,10 @@ from level import Level
 class Game:
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((WIDTH,HEIGTH))
+        self.screen = pygame.display.set_mode((WIDTH,HEIGHT))
         
         #This is where we need to add the name once we come up with it
-        pygame.display.set_caption('GAME NAME HERE')
+        pygame.display.set_caption('Kyrylo')
 
         self.screen = pygame.display.set_mode((WIDTH,HEIGHT))
         self.clock = pygame.time.Clock()
